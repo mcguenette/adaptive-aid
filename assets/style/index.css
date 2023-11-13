@@ -10,7 +10,7 @@
     
     --dark-blue:#147ae6;
     --light-blue: #99a2aa;
-    --border-radius: 50%;
+    --border-radius: 25px;
     --heading-ff: 'Urbanist', sans-serif;
     --body-ff: 'Fira Sans', sans-serif;
 }
@@ -64,7 +64,7 @@ main {
 }
 
 section {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 a {
@@ -76,7 +76,7 @@ a {
 /* Featured Section */
 
 .featured-container {
-    background-color: var(--dark-green);
+    /* background-color: var(--dark-green); */
     padding: 60px 30px;
     display: flex;
     justify-content: space-evenly;
@@ -92,7 +92,7 @@ a {
 }
 
 .featured-container h2, .featured-container p {
-    color: var(--light-bg);
+    /* color: var(--light-bg); */
     margin-bottom: 15px;
 }
 .feature-product img {
@@ -100,3 +100,33 @@ a {
     border-radius: 10px;
 }
 
+/* Buttons */
+
+input[type=button] {
+    padding: 7px 20px;
+    border-radius: 25px;
+    font-family: var(--heading-ff);
+    margin-top: 15px;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+}
+
+.primary-button {
+    background-color: var(--dark-green);
+    color: var(--light-bg);
+}
+
+.primary-button:hover {
+    background-color: var(--dark-grey);
+    color: var(--light-bg);
+}
+
+.secondary-button {
+    background-color: var(--light-green);
+    color: var(--dark-grey);
+}
+
+.secondary-button:hover {
+    background-color: var(--dark-green);
+    color: var(--light-bg);
+}
