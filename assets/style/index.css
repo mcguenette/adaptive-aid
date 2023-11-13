@@ -12,3 +12,15 @@
     --heading-ff: 'Urbanist', sans-serif;
     --body-ff: 'Fira Sans', sans-serif;
 }
+
+body {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    font-family: var(--body-ff);
+    overflow: hidden;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
