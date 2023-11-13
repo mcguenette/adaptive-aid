@@ -3,9 +3,11 @@
 
 :root {
     --dark-grey: #202124;
+    --light-bg: #eeffec;
     --light-grey: #c8c9cc;
     --dark-green: #508733;
     --light-green: #89c272;
+    
     --dark-blue:#147ae6;
     --light-blue: #99a2aa;
     --border-radius: 50%;
@@ -14,7 +16,7 @@
 }
 
 body {
-    background-color: var(--light-grey);
+    background-color: var(--light-bg);
     color: var(--dark-grey);
     font-family: var(--body-ff);
     overflow: hidden;
@@ -23,4 +25,49 @@ body {
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
+}
+
+header {
+    height: 60px;
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 60px;
+}
+
+.nav-logo {
+    width: 70%;
+}
+
+.nav-items {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item + .nav-item {
+    margin-left: 15px;
+}
+
+
+li.nav-item {
+    display: inline-block;
+}
+
+main {
+    height: 100dvh;
+    margin-top: 60px;
+}
+
+section {
+    margin-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-grey);
 }
