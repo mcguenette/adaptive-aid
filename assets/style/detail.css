@@ -1,14 +1,33 @@
 @charset "utf-8";
-@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
 
 :root {
-    --dark-grey: #202124;
-    --light-grey: #c8c9cc;
-    --dark-green: #508733;
-    --light-green: #89c272;
-    --dark-blue:#147ae6;
-    --light-blue: #99a2aa;
-    --border-radius: 50%;
-    --heading-ff: 'Urbanist', sans-serif;
-    --body-ff: 'Fira Sans', sans-serif;
+ --app-blue: #147ae6;
+ --app-green: #89c272;
+ --app-grey: #99a2aa;
+ --app-dark-green: #508733;
+ --app-light-grey: #c8c9cc;
+}
+
+body {
+    font-family: 'Fira Sans', 'Ubuntu', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.constainer {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
 }
