@@ -71,3 +71,32 @@ a {
     text-decoration: none;
     color: var(--dark-grey);
 }
+
+
+/* Featured Section */
+
+.featured-container {
+    background-color: var(--dark-green);
+    padding: 60px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.feature-product {
+    text-align: center;
+}
+
+.featured-container h2 {
+    font-size: 32px;
+}
+
+.featured-container h2, .featured-container p {
+    color: var(--light-bg);
+    margin-bottom: 15px;
+}
+.feature-product img {
+    width: 200px;
+    border-radius: 10px;
+}
+
