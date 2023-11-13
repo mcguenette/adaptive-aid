@@ -60,6 +60,11 @@ li.nav-item {
 
 main {
     height: 100dvh;
+    margin-top: 60px;
+}
+
+section {
+    margin-top: 60px;
 }
 
 a {
