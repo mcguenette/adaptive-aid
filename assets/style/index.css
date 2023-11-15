@@ -102,10 +102,10 @@ h1 {
 
 .hero-img {
     position: absolute;
-    height: 600px;
-    width: 900px;
+    height: 565px;
+    width: 850px;
     z-index: 3;
-    left: 280px;
+    left: 330px;
     top: 20px;
 }
 .square {
@@ -126,8 +126,8 @@ h1 {
 .square-1 {
     position: absolute;
     z-index: 1;
-    top: 450px;
-    left: 250px;
+    top: 400px;
+    left: 280px;
 }
 
 .square-2 {
@@ -139,13 +139,13 @@ h1 {
 .circle-1 {
     position: absolute;
     z-index: 4;
-    left: 160px;
+    left: 300px;
     top: 10px;
 }
 
 .circle-2 {
     position: absolute;
     z-index: 5;
-    left: 900px;
-    top: 500px;
+    left: 950px;
+    top: 450px;
 }
