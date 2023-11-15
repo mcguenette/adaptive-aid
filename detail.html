@@ -8,36 +8,44 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Urbanist:wght@300;500;600&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="./assets/style/detail.css">
+        <link rel="stylesheet" href="./assets/style/index.css">
         <script src="./assets/script/index.js"></script>
-        <title>Adaptive Aid</title>
+        <title>Sprout Plan</title>
     </head>
     <header>
-        <nav class="nav-items">
-            <ul>
-                <li class="nav-item"><a href="#" class="about-us">About Us</a></li>
-                <li class="nav-item"><a href="#" class="contact-us">Contact</a></li>
-                <li class="mobile-menu"><i class="fa-solid fa-bars"></i></li>
-            </ul>
-        </nav>
-        <div class="nav-bar">
+        <div class="container">
             <div>
-                <a href="./index.html">
-                    <img src="./assets/img/logo-main.png" alt="main-logo" class="main-logo">
-                </a>
+                <div class="nav-bar">
+                    <div class="nav-logo">
+                        <a href="./index.html">
+                            <img src="./assets/img/main-logo.png" alt="main-logo"
+                                class="main-logo">
+                        </a>
+                    </div>
+                    <nav class="nav-items">
+                        <ul>
+                            <li class="nav-item"><a href="./about.html"
+                                    class="nav-item">About Us</a></li>
+                            <li class="nav-item"><a href="./contact.html"
+                                    class="nav-item">Contact</a></li>
+                            <li class="mobile-menu"><i class="fa-solid fa-bars"></i>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
     <body>
         <main>
-            <div class="product-container">
-                <section>
-                    <div class="container">
-                        <img src="./assets/img/Sprout-plan-2.png">
-                    </div>
-                </section>
-                <div class="container">
-                    <section>
+            <div class="container">
+                <div class="product-container">
+                    <section class="two-columns">
+                        <div class="product-image">
+                            <img src="./assets/img/Sprout-plan-2.png">
+                        </div>
+                    </section>
+                    <section class="two-columns">
                         <div>
                             <h1>Sprout Plan</h1>
                         </div>
@@ -45,16 +53,20 @@
                             <h2>$45.99</h2>
                         </div>
                         <p>
-                            4 visites with one or more of our experts who can give their opinions one what your options moving
-                            forward can be, 6 month aid for school such as tutors, after school help, 24/7 call avalibility for any
+                            4 visites with one or more of our experts who can give their
+                            opinions one what your options moving
+                            forward can be, 6 month aid for school such as tutors, after
+                            school help, 24/7 call avalibility for any
                             unexpected issues, and 50% off on needed medication.
                         </p>
                         <p>
-                            Is this package to expensive? Try looking at our <a href="#">Seedling</a> package. Are you looking for more
-                            help than this package offers? Take a look at our <a href="#">Plant</a> package.
+                            Is this package to expensive? Try looking at our <a
+                                href="#">Seedling</a> package. Are you looking for more
+                            help than this package offers? Take a look at our <a
+                                href="#">Plant</a> package.
                         </p>
+                        <input type="button" value="Add to cart" class="secondary-button">
                     </section>
-                    <button class="secondary-button">Add to Cart</button>
                 </div>
             </div>
         </main>

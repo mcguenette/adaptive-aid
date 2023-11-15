@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(./reset.css);
+@import url(./detail.css);
 
 :root {
     --dark-grey: #202124;
@@ -9,7 +10,7 @@
     --light-green: #89c272;
     --light-brown: #d7b68f;
     --medium-brown: #eead65;
-    --dark-brown: #331f04;
+    --dark-brown: #403029;
     --dark-blue:#147ae6;
     --light-blue: #99a2aa;
     --border-radius: 25px;
@@ -19,7 +20,7 @@
 
 body {
     background-color: var(--light-bg);
-    color: var(--dark-grey);
+    color: var(--dark-brown);
     font-family: var(--body-ff);
 }
 
@@ -33,7 +34,7 @@ body {
 }
 
 header {
-    height: 60px;
+    height: 80px;
     display: flex;
 }
 
