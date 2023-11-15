@@ -17,6 +17,10 @@
     --body-ff: 'Fira Sans', sans-serif;
 }
 
+.flex {
+    display: flex;
+}
+
 body {
     background-color: var(--light-bg);
     color: var(--dark-grey);
@@ -67,6 +71,14 @@ main {
 
 section {
     margin-top: 80px;
+}
+
+h1, h2 {
+    width: 50%;
+}
+
+img {
+    height: 120px;
 }
 
 a {
