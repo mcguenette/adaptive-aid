@@ -9,16 +9,11 @@
     --light-grey: #c8c9cc;
     --dark-green: #508733;
     --light-green: #89c272;
-    
     --dark-blue:#147ae6;
     --light-blue: #99a2aa;
     --border-radius: 25px;
     --heading-ff: 'Urbanist', sans-serif;
     --body-ff: 'Fira Sans', sans-serif;
-}
-
-.flex {
-    display: flex;
 }
 
 body {
@@ -74,8 +69,17 @@ section {
     text-align: center;
 }
 
+h2 {
+    margin: 5px auto 10px auto;
+}
+
 img {
-    height: 50%;
+    width: 73%;
+    height: 350px;
+}
+
+p {
+    margin-bottom: 5px;
 }
 
 a {
@@ -83,9 +87,6 @@ a {
     color: var(--dark-grey);
 }
 
-button {
-    width: 100px;
-    padding: 10px 5px;
-    margin-top: 20px;
-    border-radius: 5px;
+div section p a {
+    color: var(--dark-green);
 }
