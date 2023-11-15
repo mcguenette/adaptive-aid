@@ -19,7 +19,7 @@ body {
     background-color: var(--light-bg);
     color: var(--dark-grey);
     font-family: var(--body-ff);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -60,10 +60,9 @@ li.nav-item {
 
 main {
     height: 100dvh;
-    margin-top: 60px;
 }
 
-section {
+section + section {
     margin-top: 60px;
 }
 
@@ -73,3 +72,80 @@ a {
 }
 
 /* Hero Section */
+
+.hero {
+    background-color: #eeffec;
+    position: relative;
+
+}
+
+h1 { 
+    font-size: 40px;
+
+ }
+
+.hero-banner {
+    /* display: flex; */
+    position: relative;
+
+}
+
+.intro-text {
+    backdrop-filter: blur(6px);
+    padding: 40px 50px;
+    background-color: rgb(237, 255, 235, 0.5);
+    position: absolute;
+    z-index: 6;
+    top: 200px;
+    left: 75px;
+}
+
+.hero-img {
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    z-index: 3;
+    left: 280px;
+    top: 20px;
+}
+.square {
+    height: 200px;
+    width: 200px;
+    background-color: var(--light-green);
+    opacity: 0.5;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border-radius: var(--border-radius);
+    background-color: var(--light-blue);
+    opacity: 0.3;
+}
+
+.square-1 {
+    position: absolute;
+    z-index: 1;
+    top: 450px;
+    left: 250px;
+}
+
+.square-2 {
+    position: absolute;
+    z-index: 2;
+    left: 1000px;
+}
+
+.circle-1 {
+    position: absolute;
+    z-index: 4;
+    left: 160px;
+    top: 10px;
+}
+
+.circle-2 {
+    position: absolute;
+    z-index: 5;
+    left: 900px;
+    top: 500px;
+}
