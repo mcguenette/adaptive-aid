@@ -98,6 +98,11 @@ a {
     align-content: center;
 }
 
+.feature-product {
+    background-color: #ffffff70;
+    padding: 40px;
+}
+
 .feature-product, .trial-container {
     text-align: center;
 }
