@@ -19,7 +19,6 @@ body {
     background-color: var(--light-bg);
     color: var(--dark-grey);
     font-family: var(--body-ff);
-    overflow: hidden;
 }
 
 .container {
@@ -129,4 +128,67 @@ input[type=button] {
 .secondary-button:hover {
     background-color: var(--dark-green);
     color: var(--light-bg);
+}
+
+
+
+footer {
+    
+    background-color: var(--light-grey);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* footer ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+} */
+
+/* .categories ul li {
+    width: calc((100% - 100px) / 6);
+} */
+
+section.footer-left, section.footer-right {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+/* footer ul li{
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+} */
+
+.footer-left span {
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.footer-left span:hover {
+    background-color: var(--light-blue);
+}
+
+.footer-left li {
+    display: inline;
+}
+
+.footer-left a {
+    font-size: 1.5em;
 }
