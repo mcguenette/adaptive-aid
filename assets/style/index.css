@@ -444,8 +444,15 @@ i.fa-solid.fa-square-check {
         display: none;
     }
     .intro-text {
-        width: 500px;
+        width: 100%;
         font-size: 14px;
         margin-left: 5px;
     }
+    section.hero {
+        margin-bottom: 100px;
+    }
+    .mission-container {
+        width: 100%;
+    }
+
 }
