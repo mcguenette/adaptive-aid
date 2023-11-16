@@ -431,4 +431,22 @@ i.fa-solid.fa-square-check {
         flex-direction: column;
         font-size: 14px;
     }
+
+    h2 {
+        font-size: 24px;
+    }
+    .product-container, section.two-columns {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 5px;
+    }
+    .nav-items {
+        display: none;
+    }
+    .intro-text {
+        width: 500px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
 }
