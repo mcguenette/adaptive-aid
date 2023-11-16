@@ -240,7 +240,8 @@ form input.primary-button {
 /* Hero Section */
 
 section.hero {
-    margin-bottom: 250px;
+    margin-bottom: 60px;
+    height: 500px;
 }
 
 .intro-text {
