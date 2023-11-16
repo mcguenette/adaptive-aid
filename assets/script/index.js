@@ -1,4 +1,11 @@
 'use strict';
+ 
+  // Close the modal if the overlay is clicked
+  window.onclick = function(event) {
+    if (event.target == document.getElementById("myModal")) {
+      document.getElementById("myModal").style.display = "none";
+    }
+  };
 
 // Utility functions
 function onEvent(event, selector, callback) {
@@ -27,10 +34,19 @@ onEvent('click', detailLink, () => {
     window.location.href='./detail.html';
 });
 
-
+// Copyright date
 
 const date = new Date().getFullYear();
 const output = select('#date');
 
 output.textContent = date;
 
+
+// Modal
+document.getElementById("openModalBtn").onclick = function() {
+    document.getElementById("myModal").style.display = "block";
+};
+  
+document.getElementsByClassName("close")[0].onclick = function() {
+    document.getElementById("myModal").style.display = "none";
+};
