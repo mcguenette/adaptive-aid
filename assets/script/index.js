@@ -27,16 +27,16 @@ onEvent('click', detailLink, () => {
     window.location.href='./detail.html';
 });
 
-// Click and scroll to section
-const plansSection = getElement('#plans');
-const plansButton = getElement('#plans-btn');
+// Click and scroll to section --- broken if utility functions are used
+const plansSection = document.getElementById('plans');
+const plansButton = document.getElementById('plans-btn');
 
  plansButton.addEventListener('click', () => {
     plansSection.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest'
-    });
+        behavior: 'auto',
+        block: 'start',
+        inline: 'nearest'
+      });
   });
 
 
