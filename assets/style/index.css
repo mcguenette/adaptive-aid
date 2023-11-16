@@ -419,10 +419,11 @@ footer {
     border-radius: 50%;
     color: var(--light-bg);
     margin-right: 15px;
+    transition: 0.3s;
 }
 
-.footer-left span:hover {
-    background-color: var(--light-blue);
+.footer-left i:hover {
+    color: var(--light-green);
 }
 
 .footer-left li {
