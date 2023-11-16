@@ -10,29 +10,27 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/index.css">    
     <script src="./assets/script/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/3d2066cb61.js" crossorigin="anonymous"></script>
     <title>Adaptive Aid</title>
 </head>
 <header>
     <div class="container">
-        <div>
-            <div class="nav-bar">
-                <div class="nav-logo">
-                    <a href="./index.html">
-                        <img src="./assets/img/logo-main.png" alt="main-logo"
-                            class="main-logo">
-                    </a>
-                </div>
-                <nav class="nav-items">
-                    <ul>
-                        <li class="nav-item"><a href="./about.html"
-                                class="nav-item">About Us</a></li>
-                        <li class="nav-item"><a href="./contact.html"
-                                class="nav-item">Contact</a></li>
-                        <li class="mobile-menu"><i class="fa-solid fa-bars"></i>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <a href="./index.html">
+                    <img src="./assets/img/main-logo.png" alt="main-logo"
+                        class="main-logo">
+                </a>
             </div>
+            <nav class="nav-items">
+                <ul>
+                    <li class="nav-item"><a href="./about.html"
+                            class="nav-item">About Us</a></li>
+                    <li class="nav-item"><a href="./contact.html"
+                            class="nav-item">Contact</a></li>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
@@ -90,23 +88,38 @@
             <section>
                 <h2 class="text-center">Our plans</h2>
                 <div class="featured-container">
-                    <div class="feature-product">
-                        <h3>Seedling</h3>
-                        <img src="./assets/img/Sprout-plan-1.png" alt="">
-                        <p></p>
-                        <input type="button" value="View Product" class="secondary-button">
+                    <div class="featured-product">
+                        <div class="featured-title"><h3>Seed</h3></div>
+                        <div class="featured-image"><img src="./assets/img/Sprout-plan-1.png" alt="seed-img"></div>
+                        <div class="featured-content">
+                            <span><i class="fa-solid fa-square-check"></i> Schedule two consultations with experts for opinions on your options</span>
+                            <span><i class="fa-solid fa-square-check"></i> Access one month of school support, including tutoring and after-school assistance</span>
+                            <span><i class="fa-solid fa-square-check"></i> Benefit from 24/7 availability for unexpected issues</span>
+                            <span><i class="fa-solid fa-square-check"></i> Enjoy a 15% discount on needed medications</span>
+                        </div>
+                        <div class="featured-button"><input type="button" value="View Product" class="secondary-button"></div>
                     </div>
-                    <div class="feature-product">
-                        <h3>Sprout</h3>
-                        <img src="./assets/img/Sprout-plan-2.png" alt="">
-                        <p></p>
-                        <input type="button" href="./detail.html" value="View Product" class="secondary-button">
+                    <div class="featured-product sprout">
+                        <div class="featured-title"><h3>Sprout</h3></div>
+                        <div class="featured-image"><img src="./assets/img/Sprout-plan-2.png" alt="sprout-img"></div>
+                        <div class="featured-content">
+                            <span><i class="fa-solid fa-square-check"></i> Schedule four consultations with experts for opinions on your options</span>
+                            <span><i class="fa-solid fa-square-check"></i> Access three months of school support, including tutoring and after-school assistance</span>
+                            <span><i class="fa-solid fa-square-check"></i> Benefit from 24/7 availability for unexpected issues</span>
+                            <span><i class="fa-solid fa-square-check"></i> Enjoy a 30% discount on needed medications</span>
+                        </div>
+                        <div class="featured-button"><input type="button" value="View Product" class="detail-link primary-button"></div>
                     </div>
-                    <div class="feature-product">
-                        <h3>Plant</h3>
-                        <img src="./assets/img/Full-Growth-1.png" alt="">
-                        <p></p>
-                        <input type="button" value="View Product" class="secondary-button">
+                    <div class="featured-product">
+                        <div class="featured-title"><h3>Seed</h3></div>
+                        <div class="featured-image"><img src="./assets/img/Full-Growth-1.png" alt="tree-img"></div>
+                        <div class="featured-content">
+                            <span><i class="fa-solid fa-square-check"></i> Schedule four consultations with experts for opinions on your options</span>
+                            <span><i class="fa-solid fa-square-check"></i> Access six months of school support, including tutoring and after-school assistance</span>
+                            <span><i class="fa-solid fa-square-check"></i> Benefit from 24/7 availability for unexpected issues</span>
+                            <span><i class="fa-solid fa-square-check"></i> Enjoy a 50% discount on needed medications</span>
+                        </div>
+                        <div class="featured-button"><input type="button" value="View Product" class="secondary-button"></div>
                     </div>
                 </div>
             </section>
@@ -121,6 +134,34 @@
             </section>
         </div>
     </main>
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-left">
+                <ul>
+                    <li>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=et5znBHhfHBh1wMA">
+                                <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mcguenette/adaptive-aid">
+                                <i class="fa-brands fa-github"></i>          
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                                <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-right">    
+                <div class="copyright">
+                    <p>&copy; <span id="date"></span> Adaptive Aid</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer></footer>
+
 </html>

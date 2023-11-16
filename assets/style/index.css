@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(./reset.css);
+@import url(./detail.css);
 
 :root {
     --dark-grey: #202124;
@@ -9,7 +10,7 @@
     --light-green: #89c272;
     --light-brown: #d7b68f;
     --medium-brown: #eead65;
-    --dark-brown: #331f04;
+    --dark-brown: #403029;
     --dark-blue:#147ae6;
     --light-blue: #99a2aa;
     --border-radius: 25px;
@@ -19,8 +20,9 @@
 
 body {
     background-color: var(--light-bg);
-    color: var(--dark-grey);
+    color: var(--dark-brown);
     font-family: var(--body-ff);
+    min-height: 100%;
 }
 
 .container {
@@ -33,19 +35,26 @@ body {
 }
 
 header {
-    height: 60px;
+    height: 80px;
     display: flex;
+}
+
+img.main-logo {
+    display: inline;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 60px;
+    line-height: 80px;
 }
 
-.nav-logo {
-    width: 70%;
+.nav-logo img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 80px;
 }
 
 .nav-items {
@@ -64,7 +73,7 @@ li.nav-item {
 }
 
 main {
-    height: 100dvh;
+min-height: 100dvh;
 }
 
 h2 {
@@ -76,7 +85,8 @@ h2, h3 {
 }
 
 section + section {
-    margin-top: 60px;
+    margin-top: 10px;
+    margin-bottom: 100px;
 }
 
 a {
@@ -88,25 +98,66 @@ a {
 /* Featured Section */
 
 .featured-container, .trial-container {
-    padding: 60px 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
+    gap: 20px;
 }
 
-.feature-product, .trial-container {
+.featured-product {
+    background-color: #ffffff70;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.featured-product, .trial-container {
     text-align: center;
+}
+
+.featured-product.sprout {
+    background-color: var(--light-brown);
+}
+
+.featured-title h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.featured-product span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: center;
+    text-align: left;
+    font-size: 14px;
+}
+
+.featured-image {
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px;
+}
+
+.featured-content {
+    padding: 15px 30px;
 }
 
 .featured-container h2, .trial-container h2 {
     font-size: 32px;
 }
 
+.featured-container h2, .featured-container p, .trial-container h2, .trial-container p {
+    margin-bottom: 15px;
+}
+
+.featured-product img {
+    width: 200px;
+}
+
 .trial-container {
-    background-color: var(--medium-brown);
+    background-color: var(--light-green);
     position: relative;
     z-index: 1;
     padding: 40px;
@@ -133,11 +184,8 @@ a {
     font-size: 22px;
 }
 
-.featured-container h2, .featured-container p, .trial-container h2, .trial-container p {
-    margin-bottom: 15px;
-}
-.feature-product img {
-    width: 200px;
+.trial-content {
+    z-index: 2;
 }
 
 /* Buttons */
@@ -184,7 +232,7 @@ h1 {
 
  .hero-banner {
     display: flex;
-    position: relative;
+    /* position: relative; */
     height: 500px;
 }
 
@@ -337,4 +385,81 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: var(--dark-green);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-brown);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    color: var(--light-bg);
+}
+
+.footer-left i {
+    font-size: 24px;
+    border-radius: 50%;
+    color: var(--light-bg);
+    margin-right: 15px;
+}
+
+.footer-left span:hover {
+    background-color: var(--light-blue);
+}
+
+.footer-left li {
+    display: inline;
+}
+
+/* font awesome */
+
+i.fa-solid.fa-square-check {
+    margin-right: 10px;
+    color: var(--dark-green);
+}
+
+/* Desktop medium: 992px and down */
+@media (max-width: 992px) {
+    .nav-items {
+        width: 50%;
+    }
+}
+
+/* tablet: 768px and down */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+    .nav-items {
+        width: 50%;
+    }
+}
+
+/* small: 480px and down */
+@media (max-width: 768px) {
+    h1 {
+      font-size: 42px;
+    }
+    .nav-items {
+        width: 50%;
+    }
+}
+
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 14px;
+    }
 }
