@@ -27,10 +27,14 @@ onEvent('click', detailLink, () => {
     window.location.href='./detail.html';
 });
 
-const plansLink = select('#plans');
-
-onEvent('click', plansLink, () => {
-    window.location.href='https://mcguenette.github.io/adaptive-aid/index.html#plans';
+// Click and scroll to section
+const plansSection = select('#plans');
+onEvent('click', plansSection, () => {
+    plansSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+    });
 });
 
 
