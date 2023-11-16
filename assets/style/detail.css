@@ -38,14 +38,6 @@ section.two-columns {
     padding: 30px;
 }
 
-h2 {
-    margin: 5px auto 10px auto;
-}
-
-.product-image img {
-
-}
-
 p {
     margin-bottom: 5px;
 }
@@ -85,7 +77,6 @@ div section p a {
         width: 50%;
     }
 }
-
 
   /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {

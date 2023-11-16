@@ -102,26 +102,62 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
     gap: 20px;
 }
 
-.feature-product {
+.featured-product {
     background-color: #ffffff70;
     padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
-.feature-product, .trial-container {
+.featured-product, .trial-container {
     text-align: center;
+}
+
+.featured-product.sprout {
+    background-color: var(--light-brown);
+}
+
+.featured-title h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.featured-product span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: center;
+    text-align: left;
+    font-size: 14px;
+}
+
+.featured-image {
+    display: flex;
+    justify-content: center;
+    padding: 15px 30px;
+}
+
+.featured-content {
+    padding: 15px 30px;
 }
 
 .featured-container h2, .trial-container h2 {
     font-size: 32px;
 }
 
+.featured-container h2, .featured-container p, .trial-container h2, .trial-container p {
+    margin-bottom: 15px;
+}
+
+.featured-product img {
+    width: 200px;
+}
+
 .trial-container {
-    background-color: var(--medium-brown);
+    background-color: var(--light-green);
     position: relative;
     z-index: 1;
     padding: 40px;
@@ -148,11 +184,8 @@ a {
     font-size: 22px;
 }
 
-.featured-container h2, .featured-container p, .trial-container h2, .trial-container p {
-    margin-bottom: 15px;
-}
-.feature-product img {
-    width: 200px;
+.trial-content {
+    z-index: 2;
 }
 
 /* Buttons */
@@ -276,7 +309,6 @@ h1 {
 
 footer {
     background-color: var(--dark-brown);
-    height: 60px;
 }
 
 .footer-container {
@@ -289,7 +321,7 @@ footer {
 .footer-left, .footer-right {
     display: flex;
     align-items: center;
-    line-height: 60px;
+    height: 60px;
     justify-content: space-between;
     color: var(--light-bg);
 }
@@ -307,6 +339,13 @@ footer {
 
 .footer-left li {
     display: inline;
+}
+
+/* font awesome */
+
+i.fa-solid.fa-square-check {
+    margin-right: 10px;
+    color: var(--dark-green);
 }
 
 /* Desktop medium: 992px and down */
