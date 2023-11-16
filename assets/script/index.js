@@ -27,6 +27,14 @@ onEvent('click', detailLink, () => {
     window.location.href='./detail.html';
 });
 
+const plansLink = select('#plans');
+
+onEvent('click', plansLink, () => {
+    window.location.href='https://mcguenette.github.io/adaptive-aid/index.html#plans';
+});
+
+
+
 // Copyright date
 
 const date = new Date().getFullYear();

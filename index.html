@@ -18,7 +18,7 @@
         <div class="nav-bar">
             <div class="nav-logo">
                 <a href="./index.html">
-                    <img src="./assets/img/main-logo.png" alt="main-logo"
+                    <img src="./assets/img/main-logo-light.png" alt="main-logo"
                         class="main-logo">
                 </a>
             </div>
@@ -28,32 +28,25 @@
                             class="nav-item">About Us</a></li>
                     <li class="nav-item"><a href="./contact.html"
                             class="nav-item">Contact</a></li>
-                    </li>
+                    <input type="button" id="open-modal-btn" class="primary-button" value="Book a Consultation">
                 </ul>
             </nav>
         </div>
     </div>
 </header>
-<body>
+<body class="index">
     <main>
-        <div class="hero">
-            <div class="hero-banner">
-                <div class="intro-text">
-                    <h1>Helping you help yourself</h1>
-                    <p>Nurturing peace, empowering minds, inspiring people.</p>
-                    <input type="button" id="open-modal-btn" class="primary-button" value="Book a Consultation">
-                </div>
-                <div>
-                    <img class="hero-img" src="./assets/img/rainbow-mist.png" alt="misty forest with a rainbow">
-                </div>
-                <div class="shapes">
-                    <div class="square square-1"></div>
-                    <div class="square square-2"></div>
-                    <div class="circle circle-1"></div>
-                    <div class="circle circle-2"></div>
-                </div>
-            </div>
-        </div>
+        <section class="hero">
+            <div class="intro-text">
+                <h1>Helping you Help Yourself</h1>
+                <!-- <p class="p-1">Nurturing Peace, Empowering Minds, Inspiring People</p> -->
+                <p> 
+                    We bring mental health support to your fingertips. Our virtual clinic offers confidential and accessible counseling,
+                    connecting you with experienced professionals dedicated to your well-being from the comfort of your home.
+                </p>
+                <input type="button" value="See Our Plans" class="primary-button">
+            </div>            
+        </section>
         <div id="modal" class="modal-container">
             <div class="modal-content">
               <span class="close"></span>
@@ -73,7 +66,7 @@
             </div>
         </div>
         <div class="container">
-            <section>
+            <section class="mission">
                 <div class="mission-container">
                     <div class="mission-content">
                         <h2>Our mission</h2>
@@ -86,7 +79,7 @@
                 </div>
             </section>
             <section>
-                <h2 class="text-center">Our plans</h2>
+                <h2 class="text-center" id="plans">Our plans</h2>
                 <div class="featured-container">
                     <div class="featured-product">
                         <div class="featured-title"><h3>Seed</h3></div>
