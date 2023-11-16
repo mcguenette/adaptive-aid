@@ -8,31 +8,29 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Urbanist:wght@300;500;600&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="./assets/style/index.css">
-        <script src="./assets/script/index.js"></script>
+        <link rel="stylesheet" href="./assets/style/index.css">    
+        <script src="./assets/script/index.js" defer></script>
+        <script src="https://kit.fontawesome.com/3d2066cb61.js" crossorigin="anonymous"></script>
         <title>Sprout Plan</title>
     </head>
     <header>
         <div class="container">
-            <div>
-                <div class="nav-bar">
-                    <div class="nav-logo">
-                        <a href="./index.html">
-                            <img src="./assets/img/main-logo.png" alt="main-logo"
-                                class="main-logo">
-                        </a>
-                    </div>
-                    <nav class="nav-items">
-                        <ul>
-                            <li class="nav-item"><a href="./about.html"
-                                    class="nav-item">About Us</a></li>
-                            <li class="nav-item"><a href="./contact.html"
-                                    class="nav-item">Contact</a></li>
-                            <li class="mobile-menu"><i class="fa-solid fa-bars"></i>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./assets/img/main-logo-dark.png" alt="main-logo"
+                            class="main-logo">
+                    </a>
                 </div>
+                <nav class="nav-items">
+                    <ul>
+                        <li class="nav-item"><a href="./about.html"
+                                class="nav-item">About Us</a></li>
+                        <li class="nav-item"><a href="./contact.html"
+                                class="nav-item">Contact</a></li>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -42,33 +40,69 @@
                 <div class="product-container">
                     <section class="two-columns">
                         <div class="product-image">
-                            <img src="./assets/img/Sprout-plan-2.png">
+                            <img src="./assets/img/Sprout-plan-1.png">
                         </div>
                     </section>
                     <section class="two-columns">
-                        <div>
+                        <div class="product-title">
                             <h1>Sprout Plan</h1>
                         </div>
-                        <div>
+                        <div class="product-price">
                             <h2>$45.99</h2>
                         </div>
                         <p>
-                            4 visites with one or more of our experts who can give their
-                            opinions one what your options moving
-                            forward can be, 6 month aid for school such as tutors, after
-                            school help, 24/7 call avalibility for any
-                            unexpected issues, and 50% off on needed medication.
+                            Benefit from four consultations with our experts to 
+                            explore your options, three months of school support including 
+                            tutoring and after-school assistance, 24/7 availability for 
+                            unexpected issues, and a 30% discount on essential medications.
                         </p>
                         <p>
                             Is this package to expensive? Try looking at our <a
-                                href="#">Seedling</a> package. Are you looking for more
+                                href="#">Seed</a> package. Are you looking for more
                             help than this package offers? Take a look at our <a
-                                href="#">Plant</a> package.
+                                href="#">Sapling</a> package.
                         </p>
                         <input type="button" value="Add to cart" class="secondary-button">
+                    </section>
+                    <section>
+                        <div class="trial-container">
+                            <div class="trial-content">
+                                <h2>What we offer</h2>
+                                <p>All our products come with a complimentary <strong>7-day</strong>, <strong>14-day</strong> or <strong>30-day</strong> trial before any charges apply.</p>
+                                <input type="button" value="Learn more" class="primary-button">
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="footer-container container">
+                <div class="footer-left">
+                    <ul>
+                        <li>
+                            <a href="https://youtu.be/dQw4w9WgXcQ?si=et5znBHhfHBh1wMA">
+                                    <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mcguenette/adaptive-aid">
+                                    <i class="fa-brands fa-github"></i>          
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">    
+                    <div class="copyright">
+                        <p>&copy; <span id="date"></span> Adaptive Aid</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

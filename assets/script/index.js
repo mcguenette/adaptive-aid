@@ -26,3 +26,36 @@ const detailLink = select('.detail-link');
 onEvent('click', detailLink, () => {
     window.location.href='./detail.html';
 });
+
+const plansLink = select('#plans');
+
+onEvent('click', plansLink, () => {
+    window.location.href='https://mcguenette.github.io/adaptive-aid/index.html#plans';
+});
+
+
+
+// Copyright date
+
+const date = new Date().getFullYear();
+const output = select('#date');
+
+output.textContent = date;
+
+
+// Modal
+select('#open-modal-btn').onclick = function() {
+    select('#modal').style.display = 'flex';
+    select('#modal').style.alignItems = 'center';
+};
+  
+document.getElementsByClassName('close')[0].onclick = function() {
+    select('#modal').style.display = 'none';
+};
+
+  // Close the modal if the overlay is clicked
+  window.onclick = function(event) {
+    if (event.target == select('#modal')) {
+      select('#modal').style.display = 'none';
+    }
+  };
