@@ -37,7 +37,8 @@ output.textContent = date;
 
 // Modal
 select('#open-modal-btn').onclick = function() {
-    select('#modal').style.display = 'block';
+    select('#modal').style.display = 'flex';
+    select('#modal').style.alignItems = 'center';
 };
   
 document.getElementsByClassName('close')[0].onclick = function() {
