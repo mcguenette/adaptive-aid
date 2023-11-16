@@ -35,7 +35,7 @@ section.two-columns {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 0px;
+    margin-bottom: 60px;
     padding: 30px;
     margin-bottom: 60px;
 }
