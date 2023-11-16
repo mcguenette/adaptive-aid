@@ -28,14 +28,16 @@ onEvent('click', detailLink, () => {
 });
 
 // Click and scroll to section
-const plansSection = select('#plans');
-onEvent('click', plansSection, () => {
+const plansSection = getElement('#plans');
+const plansButton = getElement('#plans-btn');
+
+ plansButton.addEventListener('click', () => {
     plansSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
     });
-});
+  });
 
 
 
