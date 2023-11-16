@@ -85,7 +85,6 @@ h2, h3 {
 }
 
 section + section {
-    margin-top: 10px;
     margin-bottom: 100px;
 }
 
@@ -141,7 +140,7 @@ a {
 }
 
 .featured-content {
-    padding: 15px 30px;
+    padding: 10px 5px;
 }
 
 .featured-container h2, .trial-container h2 {
@@ -360,8 +359,15 @@ i.fa-solid.fa-square-check {
     h2 {
         font-size: 24px;
     }
+    .featured-title h3 {
+        font-size: 22px;
+    }
     .nav-items {
         width: 50%;
+    }
+    .featured-container, .trial-container {
+        flex-direction: column;
+        gap: 0px;
     }
 }
 
@@ -370,8 +376,18 @@ i.fa-solid.fa-square-check {
     h1 {
       font-size: 42px;
     }
+    .featured-title h3 {
+        font-size: 22px;
+    }
     .nav-items {
         width: 50%;
+    }
+    .featured-container, .trial-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    section + section {
+        margin-bottom: 0;
     }
 }
 
@@ -379,5 +395,12 @@ i.fa-solid.fa-square-check {
 @media screen and (max-width: 768px) {
     p {
         font-size: 14px;
+    }
+    .featured-container, .trial-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    section + section {
+        margin-bottom: 0;
     }
 }
