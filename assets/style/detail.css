@@ -26,6 +26,7 @@
     align-content: center;
     justify-content: flex-start;
     height: 100%;
+    margin-top: 60px;
 }
 
 section.two-columns {
@@ -36,6 +37,7 @@ section.two-columns {
     align-items: flex-start;
     margin-top: 0px;
     padding: 30px;
+    margin-bottom: 60px;
 }
 
 p {
