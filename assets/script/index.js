@@ -26,3 +26,11 @@ const detailLink = select('.detail-link');
 onEvent('click', detailLink, () => {
     window.location.href='./detail.html';
 });
+
+
+
+const date = new Date().getFullYear();
+const output = select('#date');
+
+output.textContent = date;
+

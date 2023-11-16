@@ -21,21 +21,21 @@
 
 .product-container {
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    height: 100dvh;
 }
 
 section.two-columns {
-    margin-top: 80px;
     width: 50%;
-    text-align: center; 
-}
-
-h2 {
-    margin: 5px auto 10px auto;
-}
-
-.product-image img {
-    width: 73%;
-    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding: 30px;
 }
 
 p {
@@ -49,4 +49,38 @@ a {
 
 div section p a {
     color: var(--dark-green);
+}
+
+/* Desktop medium: 992px and down */
+@media (max-width: 992px) {
+    .product-container, section.two-columns {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 5px;
+    }
+  
+}
+
+/* tablet: 768px and down */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+    .product-container, section.two-columns {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 5px;
+    }
+    .nav-items {
+        width: 50%;
+    }
+}
+
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .product-container {
+        width: 100%;
+    }
 }
