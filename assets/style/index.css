@@ -451,10 +451,10 @@ i.fa-solid.fa-square-check {
         margin-left: 5px;
     }
     section.hero {
-        margin-bottom: 100px;
+        margin-bottom: 10px;
     }
     .mission-container {
         width: 100%;
+        padding: 30px 0px;
     }
-
 }
