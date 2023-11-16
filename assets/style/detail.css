@@ -64,22 +64,6 @@ div section p a {
   
 }
 
-/* tablet: 768px and down */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 24px;
-    }
-    .product-container, section.two-columns {
-        width: 100%;
-        height: auto;
-        align-items: center;
-        padding: 5px;
-    }
-    .nav-items {
-        width: 50%;
-    }
-}
-
   /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
     .product-container {
